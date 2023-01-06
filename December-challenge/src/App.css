@@ -71,3 +71,10 @@
   border-radius: 20px;
   box-shadow: 0px 10px 10px #23232354 ;
 }
+.flex-nav{
+  display: flex;
+}
+.item{
+  font-size: 30px;
+  font-weight: 200;
+}

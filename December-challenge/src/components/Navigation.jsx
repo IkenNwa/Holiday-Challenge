@@ -18,7 +18,6 @@ function Navigation() {
         <RxPlusCircled />
         <p>New</p>
       </Link>
-      <button className="nav-item">Dark Mode</button>
     </div>
   );
 }
