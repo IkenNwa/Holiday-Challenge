@@ -18,6 +18,7 @@ function Login() {
             <input type="submit" value="Submit" className='submit' />
         </form>
         <p>Need an Account?  <Link to="/register">Register</Link></p>
+        <Link to="/dashboard">Dashboard</Link>
     </div>
   )
 }
