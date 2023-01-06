@@ -11,14 +11,14 @@
 
 .main {
   padding: 3em;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 .main-test {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: 2em;
+  width: 20%;
 }
 
 .nav-item {

@@ -1,7 +1,7 @@
 
-const userData = [
+export const userData = [
   {
-    id: 1,
+    id: 0,
     userName: "Elochukwu",
     email: "elochuks1@gmail.com",
     password: "elobest",
@@ -69,7 +69,7 @@ const userData = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     userName: "Samiat",
     email: "sammyat@yahoo.com",
     password: "bassey",
@@ -138,4 +138,3 @@ const userData = [
   },
 ];
 
-export default userData;
