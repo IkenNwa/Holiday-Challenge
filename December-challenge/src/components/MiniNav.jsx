@@ -1,28 +1,40 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import Bp from "../assets/blood-pressure-5.svg"
+import Hr from "../assets/icon1.svg"
+import Bs from "../assets/bs.svg"
+import Bc from "../assets/icon.svg"
 
 function MiniNav() {
   return (
     <div className="flex-nav">
-      <NavLink to="/tests/bp">
-        <div className="item">
-          <p>Blood Pressure</p>
-        </div>
+      <NavLink
+        to="/tests/bp"
+        className={({ isActive }) => (isActive ? "active" : "item")}
+      >
+        <img src={Bp} alt="" />
+        <p>Blood Pressure</p>
       </NavLink>
-      <NavLink to="/tests/hr">
-        <div className="item">
-          <p>Heart Rate</p>
-        </div>
+      <NavLink
+        to="/tests/hr"
+        className={({ isActive }) => (isActive ? "active" : "item")}
+      >
+        <img src={Hr} alt="" />
+        <p>Heart Rate</p>
       </NavLink>
-      <NavLink to="/tests/bs">
-        <div className="item">
-          <p>Blood Sugar</p>
-        </div>
+      <NavLink
+        to="/tests/bs"
+        className={({ isActive }) => (isActive ? "active" : "item")}
+      >
+        <img src={Bs} alt="" />
+        <p>Blood Sugar</p>
       </NavLink>
-      <NavLink to="/tests/bc">
-        <div className="item">
-          <p>Blood Cholesterol</p>
-        </div>
+      <NavLink
+        to="/tests/bc"
+        className={({ isActive }) => (isActive ? "active" : "item")}
+      >
+        <img src={Bc} alt="" />
+        <p>Blood Cholesterol</p>
       </NavLink>
     </div>
   );

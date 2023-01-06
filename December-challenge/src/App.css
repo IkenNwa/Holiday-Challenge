@@ -1,14 +1,15 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
 }
 
-.disp{
+.disp {
   display: flex;
   height: 100vh;
 }
-.main{
+
+.main {
   padding: 3em;
   width: 100%;
   display: flex;
@@ -16,17 +17,26 @@
   justify-content: space-around;
   align-items: center;
 }
-.main-title{
+.main-test {
   width: 100%;
-}
-.navbar{
   display: flex;
   flex-direction: column;
-  background-color: #f9fdd0;
+  align-items: center;
+}
+
+.main-title {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
   align-items: flex-start;
   justify-content: center;
   padding: 2em;
 }
+
 .nav-item {
   display: flex;
   height: fit-content;
@@ -38,7 +48,8 @@
   margin-block: 10px;
   color: black;
 }
-.login{
+
+.login {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -47,34 +58,93 @@
   box-shadow: 10px 10px 10px #888a72ad;
   padding: 2rem;
 }
-.submit{
+
+.submit {
   grid-column: 1 / -1;
   padding: 6px;
 }
-.loginPage{
+
+.loginPage {
   display: flex;
   flex-direction: column;
   height: 100vh;
   align-items: center;
   justify-content: center;
 }
-.grid{
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-.grid-item{
+
+.grid-item {
   display: flex;
   flex-direction: column;
   height: fit-content;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 10px 10px #23232354 ;
+  box-shadow: 0px 10px 10px #23232354;
 }
-.flex-nav{
+
+.flex-nav {
   display: flex;
+  height: 20vh;
+  width: 100%;
+  background-color: burlywood;
+  justify-content: center;
+  align-items: center;
 }
-.item{
+
+.item {
   font-size: 30px;
-  font-weight: 200;
+  box-shadow: 0px 4px 10px #23232354;
+  margin-top: 20vh;
+  max-width: 200px;
+  max-height: 30vh;
+  margin-inline: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.item img {
+  width: 70px;
+}
+
+.active {
+  background-color: bisque;
+  color: black;
+  font-size: 30px;
+  box-shadow: 0px 4px 10px #23232354;
+  margin-top: 20vh;
+  max-width: 200px;
+  max-height: 30vh;
+  margin-inline: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.active img{
+  width: 70px;
+}
+.test-disp{
+  padding-block: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
 }

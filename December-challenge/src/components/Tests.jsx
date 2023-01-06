@@ -7,9 +7,11 @@ function Tests() {
   return (
     <div className="disp">
       <Navigation />
-      <div>
+      <div className='main-test'>
       <MiniNav />
+      <div className='test-disp'>
       <Outlet />
+      </div>
       </div>
     </div>
   );
