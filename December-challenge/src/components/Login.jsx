@@ -17,6 +17,7 @@ function Login() {
 
   return (
     <div className="loginPage">
+      <h1>HMonitor</h1>
       <form onSubmit={handleSubmit} className="login">
         <label htmlFor="userEmail">Email: </label>
         <input
