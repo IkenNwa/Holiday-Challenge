@@ -1,7 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import UserContext from '../contexts/UserContext'
 
 function Login() {
+    const { user, setUser } = useContext(UserContext)
+
+    const[email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -12,9 +19,9 @@ function Login() {
     <div className='loginPage'>
         <form onSubmit={handleSubmit} className="login">
             <label htmlFor="userEmail">Email: </label>
-            <input type="email" id='userEmail' />
+            <input type="email" id='userEmail' value={email} />
             <label htmlFor="userPassword">Password: </label>
-            <input type="password" id='userPassword'  />
+            <input type="password" id='userPassword' value={password} />
             <input type="submit" value="Submit" className='submit' />
         </form>
         <p>Need an Account?  <Link to="/register">Register</Link></p>

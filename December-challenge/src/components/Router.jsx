@@ -14,7 +14,7 @@ import Tests from "./Tests";
 
 function Router() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -28,7 +28,7 @@ function Router() {
         <Route path="/addNew" element={<AddNew />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
