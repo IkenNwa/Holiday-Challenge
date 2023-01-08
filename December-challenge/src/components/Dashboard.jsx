@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navigation from './Navigation'
+import UserContext from "../contexts/UserContext";
+
 
 function Dashboard() {
+
+    const { user, setUser } = useContext(UserContext);
+    const reading = user.userHistory.map(use => use.bP.map(read => read.reading))
+
+    console.log(reading);
   return (
     <div className='disp'>
         <Navigation />
         <div className='main'>
-          <h1 className='main-title'>Welcome Patient 👋</h1>
+          <h1 className='main-title'>Welcome {user.userName} 👋</h1>
           <div className='grid'>
             <div className="grid-item" >
               <h4>Your last Blood Pressure level reading was</h4>
-              <h1>Normal</h1>
+              <h1>{reading.pop()} </h1>
               <p>120mmMg</p>
               <p>82mmMg</p>
             </div>

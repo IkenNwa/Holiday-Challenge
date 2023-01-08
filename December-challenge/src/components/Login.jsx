@@ -9,9 +9,17 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("")
+
+  const emails = userData.find(user => user.email ===  email)
 
     function handleSubmit(e) {
         e.preventDefault()
+        if(password){
+          if (emails.password === password) {
+            setUser(emails)
+          }
+        }
     }
 
 
@@ -33,6 +41,7 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <p>{error}</p>
         <input type="submit" value="Submit" className="submit" />
       </form>
       <p>
