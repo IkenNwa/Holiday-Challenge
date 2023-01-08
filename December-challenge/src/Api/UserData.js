@@ -5,8 +5,7 @@ export const userData = [
     userName: "Elochukwu",
     email: "elochuks1@gmail.com",
     password: "elobest",
-    userHistory: [
-      {
+    userHistory: {
         bP: [
           {
             systolic: 120,
@@ -16,7 +15,7 @@ export const userData = [
           {
             systolic: 120,
             diastolic: 82,
-            reading: "Normal",
+            reading: "High",
           },
           {
             systolic: 120,
@@ -66,15 +65,13 @@ export const userData = [
           },
         ],
       },
-    ],
   },
   {
     id: 1,
     userName: "Samiat",
     email: "sammyat@yahoo.com",
     password: "bassey",
-    userHistory: [
-      {
+    userHistory: {
         bP: [
           {
             systolic: 120,
@@ -134,7 +131,6 @@ export const userData = [
           },
         ],
       },
-    ],
   },
 ];
 

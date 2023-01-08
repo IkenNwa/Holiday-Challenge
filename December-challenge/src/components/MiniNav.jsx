@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import Bp from "../assets/blood-pressure-5.svg"
+import Bp from "../assets/bp.svg"
 import Hr from "../assets/icon1.svg"
 import Bs from "../assets/bs.svg"
 import Bc from "../assets/icon.svg"
