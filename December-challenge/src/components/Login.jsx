@@ -29,7 +29,7 @@ function Login() {
         <Navigate replace to="/dashboard" />
       ) : (
         <>
-          <h1>HMonitor</h1>
+          <h1>H-Monitor</h1>
           <form onSubmit={handleSubmit} className="login">
             <label htmlFor="userEmail">Email: </label>
             <input
